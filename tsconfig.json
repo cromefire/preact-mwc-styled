@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "es6",
+        "moduleResolution": "node",
+        "target": "es2017",
+        "jsx": "preserve",
+        "reactNamespace": "h",
+        "allowJs": true,
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "skipLibCheck": true
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules/**/*"
+    ]
+}

@@ -1,0 +1,12 @@
+language: node_js
+os: trusty
+cache: yarn
+node_js:
+  - "node"
+
+deploy:
+  provider: npm
+  email: "YOUR_EMAIL_ADDRESS"
+  api_key: "YOUR_AUTH_TOKEN"
+  on:
+    branch: release

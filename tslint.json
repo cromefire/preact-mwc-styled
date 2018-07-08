@@ -1,0 +1,72 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-react"
+    ],
+    "jsRules": {},
+    "rules": {
+        "eofline": true,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "deprecation": true,
+        "prefer-const": [
+            true,
+            {
+                "destructuring": "all"
+            }
+        ],
+        "encoding": true,
+        "prefer-template": [
+            true,
+            "allow-single-concat"
+        ],
+        "quotemark": [
+            true,
+            "double",
+            "jsx-double",
+            "avoid-template"
+        ],
+        "max-line-length": [
+            true,
+            120
+        ],
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "never",
+                "singleline": "never"
+            }
+        ],
+        "no-console": false,
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-trailing-underscore",
+            "allow-snake-case",
+            "allow-pascal-case"
+        ],
+        "no-empty-interface": false,
+        "max-classes-per-file": false,
+        "no-trailing-whitespace": [
+            true,
+            "ignore-blank-lines"
+        ],
+        "jsx-no-multiline-js": false,
+        "jsx-boolean-value": [
+            true,
+            "never"
+        ],
+        "jsx-space-before-trailing-slash": true,
+        "jsx-wrap-multiline": true,
+        "jsx-curly-spacing": [
+            true,
+            "never"
+        ]
+    },
+    "rulesDirectory": []
+}
