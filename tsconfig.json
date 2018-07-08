@@ -7,7 +7,6 @@
         "target": "es2017",
         "jsx": "preserve",
         "reactNamespace": "h",
-        "allowJs": true,
         "lib": [
             "es2017",
             "dom"
@@ -16,7 +15,8 @@
         "typeRoots": [
             "node_modules/@types",
             "types"
-        ]
+        ],
+        "declaration": true
     },
     "include": [
         "**/*.ts",

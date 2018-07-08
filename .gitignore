@@ -131,3 +131,5 @@ fabric.properties
 
 *.js
 *.js.map
+*.d.ts
+!types/**/*.d.ts
