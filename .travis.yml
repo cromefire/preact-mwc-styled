@@ -3,6 +3,14 @@ os: "trusty"
 cache: "yarn"
 node_js:
   - "node"
+
+stages:
+  - "compile"
+  - "test"
+  - name: "deploy"
+    if: "branch = release"
+    if: "repo = Cromefire/preact-mwc-styled"
+
 deploy:
   provider: "npm"
   email: "tim.l@nghorst.net"
@@ -11,3 +19,14 @@ deploy:
   on:
     repo: "Cromefire/preact-mwc-styled"
     branch: "release"
+
+jobs:
+  include:
+    - stage: "compile"
+      script: "yarn build"
+
+    - stage: "test"
+      script: "./test.sh"
+
+    - stage: "deploy"
+      script: "yarn deploy"
