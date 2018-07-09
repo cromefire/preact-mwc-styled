@@ -1,6 +1,6 @@
 {
     "name": "preact-mwc-styled",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Automatically styles preact-material-components (needs to be used with something like webpack)",
     "repository": "https://github.com/Cromefire/preact-mwc-styled.git",
     "author": "Cromefire_ <cromefirehd@gmail.com>",
@@ -12,6 +12,9 @@
         "lint": "tslint -p tsconfig.json -e \"node_modules/**/*\""
     },
     "dependencies": {
+        "@material/button": "^0.36.1",
+        "@material/ripple": "0.36.0",
+        "@material/textfield": "^0.36.1",
         "preact": "^8.2.9",
         "preact-material-components": "^1.4.7"
     },
