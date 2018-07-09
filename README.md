@@ -133,6 +133,6 @@ $mdc-theme-on-surface: #000000;
 ```
 And reference it from `sass-resources-loader`. Just insert the variables you need into your theme file.
 
-For assistance on choosing colors there is the [material color tool](https://material.io).
+For assistance on choosing colors there is the [material color tool](https://material.io/tools/color/).
 
 _You can also override material classes in there_.
