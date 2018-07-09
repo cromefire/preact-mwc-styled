@@ -23,10 +23,10 @@ function unuse(id) {
 export function load_styles(styles: Array<{ style: string | { use?: () => void }, id: string }>) {
     for (const style_def of styles) {
         if (typeof style_def.style === "string") {
-            let elem = document.getElementById(`${style_def.id}_style`);
+            let elem = document.getElementById(`mwc_${style_def.id}_style`);
             if (!elem) {
                 elem = document.createElement("style");
-                elem.id = `${style_def.id}_style`;
+                elem.id = `mwc_${style_def.id}_style`;
             }
             if (use(style_def.id)) {
                 elem.innerText = "";
@@ -43,10 +43,10 @@ export function load_styles(styles: Array<{ style: string | { use?: () => void }
 export function unload_styles(styles: Array<{ style: string | { unuse?: () => void }, id: string }>) {
     for (const style_def of styles) {
         if (typeof style_def.style === "string") {
-            let elem = document.getElementById(`${style_def.id}_style`);
+            let elem = document.getElementById(`mwc_${style_def.id}_style`);
             if (!elem) {
                 elem = document.createElement("style");
-                elem.id = `${style_def.id}_style`;
+                elem.id = `mwc_${style_def.id}_style`;
             }
             if (unuse(style_def.id)) {
                 elem.innerText = "";
