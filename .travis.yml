@@ -26,7 +26,7 @@ jobs:
         provider: "npm"
         email: "cromefirehd@gmail.com"
         api_key:
-          secure: "DkaMM342VXfrSfjZ2Fm5DCu2ZRNq0L0JTSbd6I6exOVcdnA56Tfbu5eEhbaUYkQA6sAP5wAYhRN5uG8DIYNpufJBsYuTxSw15paf/exSN4W2kKjkdpRA4JITgHhOlWkbNmC3i6U0Hxyv5myykDTAG
+          secure: "DkaMM342VXfrSfjZ2Fm5DCu2ZRNq0L0JTSbd6I6exOVcdnA56Tfbu5eEhbaUYkQA6sAP5wAYhRN5uG8DIYNpufJBsYuTxSw15paf/exSN4W2kKjkdpRA4JITgHhOlWkbNmC3i6U0Hxyv5myykDTAG"
         on:
           repo: "Cromefire/preact-mwc-styled"
           branch: "release"
