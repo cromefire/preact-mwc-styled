@@ -14,9 +14,9 @@
   version "0.35.0"
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.35.0.tgz#8640c2da385e8cc393ff56153c5a319f5a7704cb"
 
-"@material/Button@^0.36.0", "@material/Button@^0.36.1":
+"@material/button@^0.36.0", "@material/button@^0.36.1":
   version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@material/Button/-/Button-0.36.1.tgz#751d0925689a84ce23c20825b273a58ab77dc2d4"
+  resolved "https://registry.yarnpkg.com/@material/button/-/button-0.36.1.tgz#751d0925689a84ce23c20825b273a58ab77dc2d4"
   dependencies:
     "@material/elevation" "^0.36.1"
     "@material/ripple" "^0.36.0"
@@ -124,7 +124,7 @@
 
 "@material/icon-button@^0.36.0":
   version "0.36.0"
-  resolved "https://registry.yarnpkg.com/@material/icon-Button/-/icon-Button-0.36.0.tgz#3b1846d2aa12793ce6af375f83cafa9c741f8f54"
+  resolved "https://registry.yarnpkg.com/@material/icon-button/-/icon-button-0.36.0.tgz#3b1846d2aa12793ce6af375f83cafa9c741f8f54"
   dependencies:
     "@material/base" "^0.35.0"
     "@material/ripple" "^0.36.0"
@@ -477,7 +477,7 @@ material-components-web@^0.36.0:
     "@material/animation" "^0.34.0"
     "@material/auto-init" "^0.35.0"
     "@material/base" "^0.35.0"
-    "@material/Button" "^0.36.1"
+    "@material/button" "^0.36.1"
     "@material/card" "^0.36.1"
     "@material/checkbox" "^0.36.1"
     "@material/chips" "^0.36.1"
@@ -488,7 +488,7 @@ material-components-web@^0.36.0:
     "@material/floating-label" "^0.36.0"
     "@material/form-field" "^0.36.0"
     "@material/grid-list" "^0.36.0"
-    "@material/icon-Button" "^0.36.0"
+    "@material/icon-button" "^0.36.0"
     "@material/icon-toggle" "^0.36.0"
     "@material/image-list" "^0.35.0"
     "@material/layout-grid" "^0.34.0"
@@ -540,7 +540,7 @@ preact-material-components@^1.4.7:
     "@material/animation" "^0.34.0"
     "@material/auto-init" "^0.35.0"
     "@material/base" "^0.35.0"
-    "@material/Button" "^0.36.0"
+    "@material/button" "^0.36.0"
     "@material/card" "^0.36.0"
     "@material/checkbox" "^0.36.0"
     "@material/chips" "^0.36.0"

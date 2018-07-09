@@ -11,12 +11,12 @@
         "build": "tsc"
     },
     "dependencies": {
-        "preact-material-components": "^1.4.7",
-        "preact": "^8.2.9"
+        "preact": "^8.2.9",
+        "preact-material-components": "^1.4.7"
     },
     "devDependencies": {
         "tslint": "^5.10.0",
-        "typescript": "^2.9.2",
-        "tslint-react": "^3.6.0"
+        "tslint-react": "^3.6.0",
+        "typescript": "^2.9.2"
     }
 }
