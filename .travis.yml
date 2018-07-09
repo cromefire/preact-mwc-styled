@@ -3,11 +3,28 @@ os: "trusty"
 cache: "yarn"
 node_js:
   - "node"
-deploy:
-  provider: "npm"
-  email: "tim.l@nghorst.net"
-  api_key:
-    secure: hvhxvxafeiNoQlXEFHf/poT82bK9Uz50X+T3i0ZB04LLSxfM9GaCrvP0ky5PubcphUW2mHXhDkZ4l+M4D4NtGX91VXqocpRhAkIAUNHcN3b1tzYJegWHx7r+l3iChBU2x5M4PUgIr9ipSxkJ81ID7AlfPO4a3/OAYkduqUvxqZxQY+4r4B0p/fiy7AUwqvBNQdoQ8anjo329cOhON/UQ5BcOpxaScs4CH61y57/8N/S6Lg8appJov81fIpkRYOf8lw/Agdqqq51fC5MALhhPhsW1mZQ3VCF1EHaI94R8E1OIwF2o2w6RCyJpxIcy/ycl+FxaLSfwkdiGtiKc9KFGNU1aWkeKzdb4h7abMwoBs9c/s2IIQmCIq+tEFJoHS+8J8426VshAeUBKjwYT/dLSe4nG74x62PgRknBy+pnrQXkZYQF+7GBAh8ZNUD/PjyWS+GVYfybt1FDdJddxRlJyx6FeCryoE8C2Ya2divoMagbkEHuLFu99UUnb3Tq5A1iHvNM2s2nlMdXakIHKZ9JI//hr7DievdSx8xidED5zB4mwoZH3HOCCU7QFVQ9FkwlIgZ+Bc5tfbOdFqA6fL6rqGe+Lh3qa8M3F7Ln9UbwievwCzr1LmV2Jrzfn8Fkgso2mldLacbQVJUNaaSXmXBIY5qPweP25i6xW0q0taEa+69Y=
-  on:
-    repo: "Cromefire/preact-mwc-styled"
-    branch: "release"
+
+stages:
+  - "compile"
+  - "test"
+  - name: "deploy"
+    if: "(branch = release) AND (repo = Cromefire/preact-mwc-styled)"
+
+jobs:
+  include:
+    - stage: "compile"
+      script: "yarn build"
+
+    - stage: "test"
+      script: "./test.sh"
+
+    - stage: "deploy"
+      script: "skip"
+      deploy:
+        provider: "npm"
+        email: "tim.l@nghorst.net"
+        api_key:
+          secure: hvhxvxafeiNoQlXEFHf/poT82bK9Uz50X+T3i0ZB04LLSxfM9GaCrvP0ky5PubcphUW2mHXhDkZ4l+M4D4NtGX91VXqocpRhAkIAUNHcN3b1tzYJegWHx7r+l3iChBU2x5M4PUgIr9ipSxkJ81ID7AlfPO4a3/OAYkduqUvxqZxQY+4r4B0p/fiy7AUwqvBNQdoQ8anjo329cOhON/UQ5BcOpxaScs4CH61y57/8N/S6Lg8appJov81fIpkRYOf8lw/Agdqqq51fC5MALhhPhsW1mZQ3VCF1EHaI94R8E1OIwF2o2w6RCyJpxIcy/ycl+FxaLSfwkdiGtiKc9KFGNU1aWkeKzdb4h7abMwoBs9c/s2IIQmCIq+tEFJoHS+8J8426VshAeUBKjwYT/dLSe4nG74x62PgRknBy+pnrQXkZYQF+7GBAh8ZNUD/PjyWS+GVYfybt1FDdJddxRlJyx6FeCryoE8C2Ya2divoMagbkEHuLFu99UUnb3Tq5A1iHvNM2s2nlMdXakIHKZ9JI//hr7DievdSx8xidED5zB4mwoZH3HOCCU7QFVQ9FkwlIgZ+Bc5tfbOdFqA6fL6rqGe+Lh3qa8M3F7Ln9UbwievwCzr1LmV2Jrzfn8Fkgso2mldLacbQVJUNaaSXmXBIY5qPweP25i6xW0q0taEa+69Y=
+        on:
+          repo: "Cromefire/preact-mwc-styled"
+          branch: "release"

@@ -77,3 +77,6 @@ typings/
 .next
 
 .idea
+.travis.yml
+test.sh
+tslint.json
