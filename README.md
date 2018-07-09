@@ -106,7 +106,7 @@ import Button from "preact-mwc-styled/Button";
 
 export default class App extends Component {
     render() {
-        return <Button primary ripple>I'm a Button</Button>;
+        return <Button primary ripple>I'm a Button</Button>
     }
 }
 ```
