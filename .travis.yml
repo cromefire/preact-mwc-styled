@@ -8,8 +8,7 @@ stages:
   - "compile"
   - "test"
   - name: "deploy"
-    if: "branch = release"
-    if: "repo = Cromefire/preact-mwc-styled"
+    if: "(branch = release) AND (repo = Cromefire/preact-mwc-styled)"
 
 jobs:
   include:
