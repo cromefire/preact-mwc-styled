@@ -128,3 +128,8 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+
+*.js
+*.js.map
+*.d.ts
+!types/**/*.d.ts
