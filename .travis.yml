@@ -19,7 +19,7 @@ jobs:
       script: "./test.sh"
 
     - stage: "deploy"
-      script: "yarn build"
+      script: skip
       deploy:
         skip_cleanup: true
         provider: "npm"
@@ -29,3 +29,6 @@ jobs:
         on:
           repo: "Cromefire/preact-mwc-styled"
           branch: "release"
+
+    - stage: "after_deploy"
+      script: "cat ~/.npm/_logs/*.log"
