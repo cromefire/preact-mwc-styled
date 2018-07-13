@@ -6,7 +6,7 @@ if [ ${?} -ne 0 ]; then
 fi
 
 echo "Linting TypeScript..."
-tslint -p tsconfig.json -e \"node_modules/**/*\"
+yarn lint
 if [ ${?} -ne 0 ]; then
     exit ${?};
 fi
