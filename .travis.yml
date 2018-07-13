@@ -8,13 +8,13 @@ script: "./travis.sh"
 
 deploy:
   skip_cleanup: true
-    provider: "npm"
-    email: "cromefirehd@gmail.com"
-    api_key:
-      secure: "pTpP5pv+Xg4jd6vHm7OlzWWnz/Kf/T9mclhxLbRUJQTywwZzT3tVkSEWO7htZDeXwsohgORl6TFYsWeW4jAgEkumkau0m5MDod/CwNvJ01Ev0SckOZcjR5WOoanpxMFE10+KoF5ulBStAPo3q7Rg08r5coxZGAxZHMGsJ+eKN68IzdXZY2vOpL6W73ZZo9S6G5ZPeFRnNDg6SGJZNiBEhIi4LGtBnGhi6U6f8IevMvgintZylaDfxC8JUGXB3Gfxh3mEFuf1CaXFJwL+RLI2ANghIIaaJEMTV1Lu8/olOldjdpMSNbEiMG6a8YVkqSkbVSe8X9Wo3VEsX9MiGI9IPNFOCwxypPpmCx5huQAcESfxlTrm/RXV0LL90OYUr6cfTyHNKaSs9nmDRkiPvoHFAZ95JAwQlg3tAim5rUs2kpGccnMGulu0XGllX5W/jujT/hJko2nlTjwjCpBbFDjA+zXS4IeGV3WpvLkJHf02+IDZijKmkRBms5Af6WGqcynfnB9A9iqXRBeZXarYiu3DuTNGOHUJeP7kA7xrDp659FoyGFa9dYjuhMa5w5DYeLP8SuqVTcKvSgL+O+WYakwN6P61N0AnimdCttR0fn+YGZGQFQ8AV+sdDnQrrX8KRmvPev+1TVprpqudkuqKQUE79xTWO9sVFJR5xBIsmb8ka2I="
-    on:
-      repo: "Cromefire/preact-mwc-styled"
-      branch: "release"
-      type: "push"
+  provider: "npm"
+  email: "cromefirehd@gmail.com"
+  api_key:
+    secure: "pTpP5pv+Xg4jd6vHm7OlzWWnz/Kf/T9mclhxLbRUJQTywwZzT3tVkSEWO7htZDeXwsohgORl6TFYsWeW4jAgEkumkau0m5MDod/CwNvJ01Ev0SckOZcjR5WOoanpxMFE10+KoF5ulBStAPo3q7Rg08r5coxZGAxZHMGsJ+eKN68IzdXZY2vOpL6W73ZZo9S6G5ZPeFRnNDg6SGJZNiBEhIi4LGtBnGhi6U6f8IevMvgintZylaDfxC8JUGXB3Gfxh3mEFuf1CaXFJwL+RLI2ANghIIaaJEMTV1Lu8/olOldjdpMSNbEiMG6a8YVkqSkbVSe8X9Wo3VEsX9MiGI9IPNFOCwxypPpmCx5huQAcESfxlTrm/RXV0LL90OYUr6cfTyHNKaSs9nmDRkiPvoHFAZ95JAwQlg3tAim5rUs2kpGccnMGulu0XGllX5W/jujT/hJko2nlTjwjCpBbFDjA+zXS4IeGV3WpvLkJHf02+IDZijKmkRBms5Af6WGqcynfnB9A9iqXRBeZXarYiu3DuTNGOHUJeP7kA7xrDp659FoyGFa9dYjuhMa5w5DYeLP8SuqVTcKvSgL+O+WYakwN6P61N0AnimdCttR0fn+YGZGQFQ8AV+sdDnQrrX8KRmvPev+1TVprpqudkuqKQUE79xTWO9sVFJR5xBIsmb8ka2I="
+  on:
+    repo: "Cromefire/preact-mwc-styled"
+    branch: "release"
+    type: "push"
 
 after_deploy: "cat ~/.npm/_logs/*.log; exit 0"
