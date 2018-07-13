@@ -17,5 +17,4 @@ deploy:
       branch: "release"
       type: "push"
 
-after_deploy:
-  script: "cat ~/.npm/_logs/*.log; exit 0"
+after_deploy: "cat ~/.npm/_logs/*.log; exit 0"
