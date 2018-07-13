@@ -9,6 +9,8 @@ stages:
   - "test"
   - name: "deploy"
     if: "(branch = release) AND (repo = Cromefire/preact-mwc-styled) AND (type IN (push, api))"
+  - name: "after_deploy"
+    if: "(branch = release) AND (repo = Cromefire/preact-mwc-styled) AND (type IN (push, api))"
 
 jobs:
   include:
@@ -31,4 +33,4 @@ jobs:
           branch: "release"
 
     - stage: "after_deploy"
-      script: "cat ~/.npm/_logs/*.log"
+      script: "cat ~/.npm/_logs/*.log; exit 0"
