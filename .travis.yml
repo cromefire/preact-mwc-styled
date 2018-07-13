@@ -25,7 +25,7 @@ jobs:
         provider: "npm"
         email: "cromefirehd@gmail.com"
         api_key:
-          secure: "gWzOuIIsol+6ip0fZTQf5v611QafQCoe0SEGOO/SJoBRly7JwSLHXlzOe8zhI6VyXmMRFpPVmzQPsCXTxabhkC8gP2SQL0kcLhNPfCGrCcWUzZ+1WuE1LHYDC9yaFvm2ik895dHBpf2NTjtnZ1CAiywYtbDMfV4o9L6dgVn2jKFdta6WQ+vSJ9cH0DvOWoqqnppdaNAfbYmQA6Y9fqmc5I2kaYpNRQfj+v36/B0LCPmySCTpOXjzBEXfml2GcnRvwUd27LZmKIVw1kFWQJCIORzvyoW1A/bhFOW/093qlz9fkMm64TLGibIERbJJ1kE7WXBvuUN2ybaYFIuZ0A+kIEDoJQDG2zHhc3Ay6TF9J47R4Y2U+2Do3SFS+ibhfOdfeLkZWfGKxokwvjCull+UHUfX13yHm1JYMFh/RacUx21/xdC0PV8LpuG4dxmoQYzf+klVe2tjv3HM8IJDiXxbt5IN2NV3BoaUCc0HWWVW5SvTvmIlQs43+Uz1ceRo/Hpq2CsXwFXqcTGA8ziW61oaBUNComiS1I8RjURY+wEe0dSEQDHMpZGuq1G3Qb2DEywDhhBXOTxwILqHszdCSX/HKqAsnVhkm9tLtQLLwfKg/mgjYRNvQUMLQ5IhZNgayq4pvaPeuwgC0uTvT76mO4iCYE3uDcXMcPtvLUx2xvqLbuw="
+          secure: "pTpP5pv+Xg4jd6vHm7OlzWWnz/Kf/T9mclhxLbRUJQTywwZzT3tVkSEWO7htZDeXwsohgORl6TFYsWeW4jAgEkumkau0m5MDod/CwNvJ01Ev0SckOZcjR5WOoanpxMFE10+KoF5ulBStAPo3q7Rg08r5coxZGAxZHMGsJ+eKN68IzdXZY2vOpL6W73ZZo9S6G5ZPeFRnNDg6SGJZNiBEhIi4LGtBnGhi6U6f8IevMvgintZylaDfxC8JUGXB3Gfxh3mEFuf1CaXFJwL+RLI2ANghIIaaJEMTV1Lu8/olOldjdpMSNbEiMG6a8YVkqSkbVSe8X9Wo3VEsX9MiGI9IPNFOCwxypPpmCx5huQAcESfxlTrm/RXV0LL90OYUr6cfTyHNKaSs9nmDRkiPvoHFAZ95JAwQlg3tAim5rUs2kpGccnMGulu0XGllX5W/jujT/hJko2nlTjwjCpBbFDjA+zXS4IeGV3WpvLkJHf02+IDZijKmkRBms5Af6WGqcynfnB9A9iqXRBeZXarYiu3DuTNGOHUJeP7kA7xrDp659FoyGFa9dYjuhMa5w5DYeLP8SuqVTcKvSgL+O+WYakwN6P61N0AnimdCttR0fn+YGZGQFQ8AV+sdDnQrrX8KRmvPev+1TVprpqudkuqKQUE79xTWO9sVFJR5xBIsmb8ka2I="
         on:
           repo: "Cromefire/preact-mwc-styled"
           branch: "release"
