@@ -1,10 +1,14 @@
 language: "node_js"
-os: "trusty"
+os: "linux"
 cache: "yarn"
 node_js:
   - "node"
 
 script: "./travis.sh"
+
+stages:
+  - name: deploy
+    if: "(repo = Cromefire/preact-mwc-styled) AND (branch = release) AND (type IN (push, api))"
 
 deploy:
   skip_cleanup: true
@@ -15,6 +19,5 @@ deploy:
   on:
     repo: "Cromefire/preact-mwc-styled"
     branch: "release"
-    type: "push"
 
 after_deploy: "cat ~/.npm/_logs/*.log; exit 0"
