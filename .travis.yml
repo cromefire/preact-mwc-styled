@@ -4,6 +4,9 @@ cache: "yarn"
 node_js:
   - "node"
 
+env:
+  npm_config_loglevel: "verbose"
+
 script: "./travis.sh"
 
 stages:
