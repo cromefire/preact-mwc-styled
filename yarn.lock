@@ -203,7 +203,7 @@
     "@material/selection-control" "^0.36.0"
     "@material/theme" "^0.35.0"
 
-"@material/ripple@^0.36.0":
+"@material/ripple@0.36.0", "@material/ripple@^0.36.0":
   version "0.36.0"
   resolved "https://registry.yarnpkg.com/@material/ripple/-/ripple-0.36.0.tgz#262491c37643c3aabad93cd033698622c70beb13"
   dependencies:
