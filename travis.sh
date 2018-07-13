@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "Building project..."
+yarn build
+if [ ${?} -ne 0 ]; then
+    exit ${?};
+fi
+
+echo "Linting TypeScript..."
+tslint -p tsconfig.json -e \"node_modules/**/*\"
+if [ ${?} -ne 0 ]; then
+    exit ${?};
+fi

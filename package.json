@@ -7,7 +7,7 @@
     "license": "MPL-2.0",
     "private": false,
     "scripts": {
-        "test": "./test.sh",
+        "test": "./travis.sh",
         "build": "tsc --pretty",
         "lint": "tslint -p tsconfig.json -e \"node_modules/**/*\""
     },
