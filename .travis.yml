@@ -11,7 +11,7 @@ script: "./travis.sh"
 
 stages:
   - name: deploy
-    if: "(repo = Cromefire/preact-mwc-styled) AND (branch = release) AND (type IN (push, api))"
+    if: "(repo = cromefire/preact-mwc-styled) AND (branch = release) AND (type IN (push, api))"
 
 deploy:
   skip_cleanup: true
