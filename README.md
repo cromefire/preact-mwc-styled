@@ -43,7 +43,7 @@ module.exports = {
         {
             test: {
                 test: /\.scss$/,
-                and: /^node_modules\/precat-mwc-styled\//
+                and: [/node_modules\/precat-mwc-styled\//]
             },
             use: [
                 {loader: "style-loader/usable"},
@@ -63,7 +63,7 @@ module.exports = {
         {
             test: {
                 test: /\.scss$/,
-                exclude: /^node_modules\//
+                exclude: /node_modules\//
             },
             use: [
                 // Your scss processing
@@ -106,7 +106,7 @@ import Button from "preact-mwc-styled/Button";
 
 export default class App extends Component {
     render() {
-        return <Button primary ripple>I'm a Button</Button>
+        return <Button primary ripple>I am a Button</Button>
     }
 }
 ```
