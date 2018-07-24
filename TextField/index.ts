@@ -16,6 +16,17 @@ export class TextField extends PTextField {
         super.componentWillUnmount();
         unload_styles(this.styles);
     }
+
+    public materialDom(allprops) {
+        if (allprops.helperText) {
+            if (allprops.className) {
+                allprops.className += " preact-mwc-styled--text-with-helper";
+            } else {
+                allprops.className = "preact-mwc-styled--text-with-helper";
+            }
+        }
+        return super.materialDom(allprops);
+    }
 }
 
 // noinspection JSUnusedGlobalSymbols
