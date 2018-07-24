@@ -9,7 +9,8 @@
     "scripts": {
         "test": "./travis.sh",
         "build": "tsc --pretty",
-        "lint": "tslint -p tsconfig.json -e \"node_modules/**/*\""
+        "lint": "tslint -p tsconfig.json -e \"node_modules/**/*\"",
+        "prepare": "yarn build"
     },
     "peerDependencies": {
         "webpack": "^3 | ^4"
