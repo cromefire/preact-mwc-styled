@@ -3,7 +3,6 @@
 
 .mdc-floating-label {
   user-focus: ignore;
-  -moz-user-focus: ignore;
   pointer-events: none;
 }
 
@@ -13,4 +12,13 @@
 
 .mdc-notched-outline__idle {
   pointer-events: none;
+}
+
+//noinspection CssOverwrittenProperties
+.preact-mwc-styled--text-with-helper > .mdc-text-field {
+  width: 100%;
+  //noinspection CssInvalidPropertyValue
+  width: stretch;
+  //noinspection CssInvalidPropertyValue
+  height: stretch;
 }
