@@ -133,3 +133,4 @@ fabric.properties
 *.js.map
 *.d.ts
 !types/**/*.d.ts
+package-lock.json
