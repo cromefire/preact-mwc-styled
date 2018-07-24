@@ -16,7 +16,7 @@
             "node_modules/@types",
             "types"
         ],
-        "declaration": true
+        "declaration": false
     },
     "include": [
         "**/*.ts",
