@@ -15,6 +15,7 @@
         "@material/button": "^0.36.1",
         "@material/ripple": "0.36.0",
         "@material/textfield": "^0.36.1",
+        "@material/card": "^0.36.1",
         "preact": "^8.2.9",
         "preact-material-components": "https://github.com/cromefire/preact-material-components.git#tsd-jsx-fix"
     },
