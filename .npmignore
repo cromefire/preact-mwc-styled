@@ -81,3 +81,4 @@ typings/
 test.sh
 tslint.json
 package-lock.json
+travis.sh
