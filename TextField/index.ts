@@ -1,4 +1,4 @@
-import PTextField from "preact-material-components/TextField";
+import PTextField from "preact-material-components/TextField/TextField";
 import {load_styles} from "../util/style";
 import tf_style from "./textfield.scss";
 

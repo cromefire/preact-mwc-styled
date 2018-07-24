@@ -630,9 +630,9 @@ path-parse@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
 
-preact-material-components@^1.4.7:
+"preact-material-components@https://github.com/cromefire/preact-material-components.git#tsd-jsx-fix":
   version "1.5.0"
-  resolved "https://registry.yarnpkg.com/preact-material-components/-/preact-material-components-1.5.0.tgz#55dbf1f71aed68c461cd169c19ae7545378121ef"
+  resolved "https://github.com/cromefire/preact-material-components.git#9618403440af90d19228daa8f0de7ebcacb99d35"
   dependencies:
     "@material/animation" "^0.34.0"
     "@material/auto-init" "^0.35.0"

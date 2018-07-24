@@ -1,4 +1,4 @@
-import PButton from "preact-material-components/Button";
+import PButton from "preact-material-components/Button/Button";
 import {load_styles, unload_styles} from "../util/style";
 import button_style from "./button.scss";
 
