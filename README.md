@@ -76,8 +76,8 @@ module.exports = {
 ```
 
 ### Notes on webpack
-You need to install `style-loader`, `css-loader`, `postcss-loader`, `postcss-custom-properties`, `autoprefixer`,
-`sass-loader` and `sass-resources-loader` for this config to work.
+~~You need to install~~ `style-loader`, `css-loader`, `postcss-loader`, `postcss-custom-properties`, `autoprefixer`,
+`sass-loader` and `sass-resources-loader` ~~for this config to work~~ are automatically installed by this package.
 
 You can add more `postcss` plugins or remove `autoprefixer`, removing `postcss-custom-properties` is possible,
 but not recommended.

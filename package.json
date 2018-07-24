@@ -12,13 +12,23 @@
         "lint": "tslint -p tsconfig.json -e \"node_modules/**/*\"",
         "prepare": "yarn build"
     },
+    "peerDependencies": {
+        "webpack": "^3 | ^4"
+    },
     "dependencies": {
         "@material/button": "^0.36.1",
+        "@material/card": "^0.36.1",
         "@material/ripple": "0.36.0",
         "@material/textfield": "^0.36.1",
-        "@material/card": "^0.36.1",
+        "autoprefixer": "^9.0.1",
+        "css-loader": "^1.0.0",
+        "postcss-custom-properties": "^7.0.0",
+        "postcss-loader": "^2.1.6",
         "preact": "^8.2.9",
-        "preact-material-components": "https://github.com/cromefire/preact-material-components.git#tsd-jsx-fix"
+        "preact-material-components": "https://github.com/cromefire/preact-material-components.git#tsd-jsx-fix",
+        "sass-loader": "^7.0.3",
+        "sass-resources-loader": "^1.3.3",
+        "style-loader": "^0.21.0"
     },
     "devDependencies": {
         "tslint": "^5.10.0",
