@@ -3,20 +3,18 @@ import {load_styles, unload_styles} from "../util/style";
 import progress_style from "./progress.scss";
 
 export class LinearProgress extends PLinearProgress {
+    public readonly styles = [
+        {style: progress_style, id: "progress"}
+    ];
+
     public componentWillMount() {
-        load_styles(
-            [
-                {style: progress_style, id: "progress"}
-            ]
-        );
+        super.componentWillMount();
+        load_styles(this.styles);
     }
 
     public componentWillUnmount() {
-        unload_styles(
-            [
-                {style: progress_style, id: "progress"}
-            ]
-        );
+        super.componentWillUnmount();
+        unload_styles(this.styles);
     }
 }
 
