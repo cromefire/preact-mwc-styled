@@ -1,10 +1,10 @@
-import PLinearProgress from "preact-material-components/LinearProgress/LinearProgress";
+import PCard from "preact-material-components/Card/Card";
 import {load_styles, unload_styles} from "../util/style";
-import progress_style from "./progress.scss";
+import card_style from "./card.scss";
 
-export class LinearProgress extends PLinearProgress {
+export class Card extends PCard {
     public readonly styles = [
-        {style: progress_style, id: "progress"}
+        {style: card_style, id: "card"}
     ];
 
     public componentWillMount() {
@@ -19,4 +19,4 @@ export class LinearProgress extends PLinearProgress {
 }
 
 // noinspection JSUnusedGlobalSymbols
-export default LinearProgress;
+export default Card;

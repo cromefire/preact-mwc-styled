@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "@material/button": "^0.36.1",
+        "@material/card": "^0.36.1",
         "@material/ripple": "0.36.0",
         "@material/textfield": "^0.36.1",
         "autoprefixer": "^9.0.1",
