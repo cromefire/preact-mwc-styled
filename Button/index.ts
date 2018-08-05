@@ -1,4 +1,4 @@
-import PButton from "preact-material-components/ts/Button";
+import PButton from "preact-material-components/esm/Button";
 import {load_styles, unload_styles} from "../util/style";
 import button_style from "./button.scss";
 
@@ -8,10 +8,12 @@ export class Button extends PButton {
     ];
 
     public componentWillMount() {
+        super.componentWillMount();
         load_styles(this.styles);
     }
 
     public componentWillUnmount() {
+        super.componentWillUnmount();
         unload_styles(this.styles);
     }
 }

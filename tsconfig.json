@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "outDir": "./js",
         "sourceMap": true,
         "noImplicitAny": false,
         "module": "es6",
@@ -16,13 +17,15 @@
             "node_modules/@types",
             "types"
         ],
-        "declaration": false
+        "declaration": false,
+        "experimentalDecorators": true
     },
     "include": [
         "**/*.ts",
         "**/*.tsx"
     ],
     "exclude": [
-        "node_modules/**/*"
+        "node_modules/**/*",
+        "js/**/*"
     ]
 }

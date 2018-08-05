@@ -1,4 +1,4 @@
-import PCard from "preact-material-components/ts/Card";
+import PCard from "preact-material-components/esm/Card";
 import {load_styles, unload_styles} from "../util/style";
 import card_style from "./card.scss";
 
