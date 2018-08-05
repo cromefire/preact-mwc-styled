@@ -1,6 +1,6 @@
 {
     "name": "preact-mwc-styled",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "description": "Automatically styles preact-material-components (needs to be used with something like webpack)",
     "repository": "https://github.com/cromefire/preact-mwc-styled.git",
     "author": "Cromefire_ <cromefirehd@gmail.com>",
