@@ -8,7 +8,6 @@ export class TextField extends PTextField {
     ];
 
     public componentWillMount() {
-        super.componentWillMount();
         load_styles(this.styles);
     }
 

@@ -8,7 +8,6 @@ export class Card extends PCard {
     ];
 
     public componentWillMount() {
-        super.componentWillMount();
         load_styles(this.styles);
     }
 

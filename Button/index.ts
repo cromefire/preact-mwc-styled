@@ -8,7 +8,6 @@ export class Button extends PButton {
     ];
 
     public componentWillMount() {
-        super.componentWillMount();
         load_styles(this.styles);
     }
 

@@ -8,7 +8,6 @@ export class LinearProgress extends PLinearProgress {
     ];
 
     public componentWillMount() {
-        super.componentWillMount();
         load_styles(this.styles);
     }
 
