@@ -1,4 +1,4 @@
-import PTextField from "preact-material-components/TextField/TextField";
+import PTextField, {ITextFieldProps, ITextFieldState} from "preact-material-components/ts/TextField";
 import {load_styles, unload_styles} from "../util/style";
 import tf_style from "./textfield.scss";
 
@@ -17,15 +17,16 @@ export class TextField extends PTextField {
         unload_styles(this.styles);
     }
 
-    public materialDom(allprops) {
-        if (allprops.helperText) {
-            if (allprops.className) {
-                allprops.className += " preact-mwc-styled--text-with-helper";
+    // TODO: Remove 'JSX.HTMLAttributes' when preact-material-components@1.5.1-alpha2 is out
+    public render(props: ITextFieldProps & JSX.HTMLAttributes, state: ITextFieldState) {
+        if (props.helperText) {
+            if (props.className) {
+                props.className += " preact-mwc-styled--text-with-helper";
             } else {
-                allprops.className = "preact-mwc-styled--text-with-helper";
+                props.className = "preact-mwc-styled--text-with-helper";
             }
         }
-        return super.materialDom(allprops);
+        return super.render(props, state);
     }
 }
 

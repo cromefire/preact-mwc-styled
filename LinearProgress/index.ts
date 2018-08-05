@@ -1,4 +1,4 @@
-import PLinearProgress from "preact-material-components/LinearProgress/LinearProgress";
+import PLinearProgress from "preact-material-components/ts/LinearProgress";
 import {load_styles, unload_styles} from "../util/style";
 import progress_style from "./progress.scss";
 
