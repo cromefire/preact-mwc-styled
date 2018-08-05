@@ -12,7 +12,6 @@ export class TextField extends PTextField {
     }
 
     public componentWillUnmount() {
-        super.componentWillUnmount();
         unload_styles(this.styles);
     }
 
