@@ -15,7 +15,7 @@ export class TextField extends PTextField {
         unload_styles(this.styles);
     }
 
-    // TODO: Remove 'JSX.HTMLAttributes' when preact-material-components@1.5.1-alpha2 is out
+    // TODO: Remove 'JSX.HTMLAttributes' when preact-material-components@1.5.1-alpha3 is out
     public render(props: ITextFieldProps & JSX.HTMLAttributes, state: ITextFieldState) {
         if (props.helperText) {
             if (props.className) {
