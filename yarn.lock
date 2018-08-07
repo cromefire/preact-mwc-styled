@@ -1113,9 +1113,9 @@ postcss@^7.0.1:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-preact-material-components@1.5.1-alpha2:
-  version "1.5.1-alpha2"
-  resolved "https://registry.yarnpkg.com/preact-material-components/-/preact-material-components-1.5.1-alpha2.tgz#9093eef4f71ded75306a65f1f594f63d55963036"
+preact-material-components@1.5.1-alpha3:
+  version "1.5.1-alpha3"
+  resolved "https://registry.yarnpkg.com/preact-material-components/-/preact-material-components-1.5.1-alpha3.tgz#4d297ac698e9e2da25d66f8ea9ef2e720505c031"
   dependencies:
     "@material/animation" "^0.34.0"
     "@material/auto-init" "^0.35.0"
