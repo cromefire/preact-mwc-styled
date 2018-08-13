@@ -1,6 +1,6 @@
 {
     "name": "preact-mwc-styled",
-    "version": "0.0.19",
+    "version": "0.0.21",
     "description": "Automatically styles preact-material-components (needs to be used with something like webpack)",
     "repository": "https://github.com/cromefire/preact-mwc-styled.git",
     "author": "Cromefire_ <cromefirehd@gmail.com>",
@@ -16,10 +16,12 @@
         "webpack": "3 || 4"
     },
     "dependencies": {
-        "@material/button": "^0.36.1",
-        "@material/card": "^0.36.1",
-        "@material/ripple": "0.36.0",
-        "@material/textfield": "^0.36.1",
+        "@material/button": "^0.38.0",
+        "@material/card": "^0.38.0",
+        "@material/checkbox": "^0.38.0",
+        "@material/form-field": "^0.38.0",
+        "@material/ripple": "^0.38.0",
+        "@material/textfield": "^0.38.0",
         "autoprefixer": "^9.0.1",
         "css-loader": "^1.0.0",
         "postcss-custom-properties": "^7.0.0",
