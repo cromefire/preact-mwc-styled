@@ -1,6 +1,6 @@
 import PCard from "preact-material-components/esm/Card";
 import {load_styles, unload_styles} from "../util/style";
-import style from "./card.scss";
+import style from "./index.scss";
 
 export class Card extends PCard {
     public readonly styles = [
