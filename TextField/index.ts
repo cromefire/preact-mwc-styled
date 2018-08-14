@@ -1,10 +1,10 @@
 import PTextField, {ITextFieldProps, ITextFieldState} from "preact-material-components/esm/TextField";
 import {load_styles, unload_styles} from "../util/style";
-import tf_style from "./textfield.scss";
+import style from "./index.scss";
 
 export class TextField extends PTextField {
     public readonly styles = [
-        {style: tf_style, id: "textfield"}
+        {style, id: "textfield"}
     ];
 
     public componentWillMount() {

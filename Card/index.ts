@@ -1,10 +1,10 @@
 import PCard from "preact-material-components/esm/Card";
 import {load_styles, unload_styles} from "../util/style";
-import card_style from "./card.scss";
+import style from "./card.scss";
 
 export class Card extends PCard {
     public readonly styles = [
-        {style: card_style, id: "card"}
+        {style, id: "card"}
     ];
 
     public componentWillMount() {
