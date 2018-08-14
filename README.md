@@ -15,7 +15,7 @@ module.exports = {
                 and: /^node_modules\/precat-mwc-styled/
             },
             use: [
-                {loader: "style-loader/usable"},
+                {loader: "style-loader"},
                 {loader: "css-loader"},
                 {
                     loader: "postcss-loader", options: {
@@ -46,7 +46,7 @@ module.exports = {
                 and: [/node_modules\/precat-mwc-styled\//]
             },
             use: [
-                {loader: "style-loader/usable"},
+                {loader: "style-loader"},
                 {loader: "css-loader"},
                 {
                     loader: "postcss-loader", options: {
@@ -88,8 +88,7 @@ You should prerender the site in production
 (If this library is good enough for your use case, it's currently not well tested)
 
 ### Why do I need to use these loaders?
-* `style-loader`: Inserts the css for the components into DOM.
-`/usable` is optional and only inserts css an use.
+* `style-loader`: Inserts the css for the components into DOM. Can be replaced with `extract-loader` in production.
 * `css-loader`: See `sass-loader` documentation
 * `postcss`:
   * `postcss-custom-properties`: To "compile" your theme into the css 
