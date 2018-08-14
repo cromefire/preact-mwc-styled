@@ -1,10 +1,10 @@
 import PLinearProgress from "preact-material-components/esm/LinearProgress";
 import {load_styles, unload_styles} from "../util/style";
-import progress_style from "./progress.scss";
+import style from "./index.scss";
 
 export class LinearProgress extends PLinearProgress {
     public readonly styles = [
-        {style: progress_style, id: "progress"}
+        {style, id: "progress"}
     ];
 
     public componentWillMount() {

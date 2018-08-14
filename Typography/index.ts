@@ -1,10 +1,10 @@
-import PButton from "preact-material-components/esm/Button";
+import PTypography from "preact-material-components/esm/Typography";
 import {load_styles, unload_styles} from "../util/style";
 import style from "./index.scss";
 
-export class Button extends PButton {
+export class Typography extends PTypography {
     public readonly styles = [
-        {style, id: "button"}
+        {style, id: "typography"}
     ];
 
     public componentWillMount() {
@@ -12,10 +12,9 @@ export class Button extends PButton {
     }
 
     public componentWillUnmount() {
-        super.componentWillUnmount();
         unload_styles(this.styles);
     }
 }
 
 // noinspection JSUnusedGlobalSymbols
-export default Button;
+export default Typography;
