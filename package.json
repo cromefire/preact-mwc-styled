@@ -16,12 +16,6 @@
         "webpack": "3 || 4"
     },
     "dependencies": {
-        "@material/button": "^0.38.0",
-        "@material/card": "^0.38.0",
-        "@material/checkbox": "^0.38.0",
-        "@material/form-field": "^0.38.0",
-        "@material/ripple": "^0.38.0",
-        "@material/textfield": "^0.38.0",
         "preact": "^8.2.9",
         "preact-material-components": "^1.5.1-beta1"
     },
