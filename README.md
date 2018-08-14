@@ -99,7 +99,7 @@ You should prerender the site in production
 
 ### Using them in code
 Just use them like:
-```typescript jsx
+``` jsx harmony
 import {Component, h} from "preact";
 import Button from "preact-mwc-styled/Button";
 
