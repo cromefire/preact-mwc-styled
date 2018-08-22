@@ -1,6 +1,6 @@
 {
     "name": "preact-mwc-styled",
-    "version": "0.0.24",
+    "version": "0.1.0",
     "description": "Automatically styles preact-material-components (needs to be used with something like webpack)",
     "repository": "https://github.com/cromefire/preact-mwc-styled.git",
     "author": "Cromefire_ <cromefirehd@gmail.com>",
@@ -13,11 +13,11 @@
         "prepublishOnly": "yarn build"
     },
     "peerDependencies": {
-        "webpack": "3 || 4"
+        "webpack": "3 || 4",
+        "preact-material-components": "^1.5.1-beta1"
     },
     "dependencies": {
-        "preact": "^8.2.9",
-        "preact-material-components": "^1.5.1-beta1"
+        "preact": "^8.2.9"
     },
     "devDependencies": {
         "tslint": "^5.10.0",
