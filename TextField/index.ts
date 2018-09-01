@@ -23,7 +23,7 @@ export class TextField extends PTextField {
                 props.className = "preact-mwc-styled--text-with-helper";
             }
         }
-        return super.render(props, this.state);
+        return super.render(props);
     }
 }
 
