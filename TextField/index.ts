@@ -1,4 +1,4 @@
-import PTextField, {ITextFieldProps, ITextFieldState} from "preact-material-components/esm/TextField";
+import PTextField, {ITextFieldProps} from "preact-material-components/esm/TextField";
 import {load_styles, unload_styles} from "../util/style";
 import style from "./index.scss";
 
@@ -15,7 +15,7 @@ export class TextField extends PTextField {
         unload_styles(this.styles);
     }
 
-    public render(props: ITextFieldProps, state: ITextFieldState) {
+    public render(props: ITextFieldProps) {
         if (props.helperText) {
             if (props.className) {
                 props.className += " preact-mwc-styled--text-with-helper";
@@ -23,7 +23,7 @@ export class TextField extends PTextField {
                 props.className = "preact-mwc-styled--text-with-helper";
             }
         }
-        return super.render(props, state);
+        return super.render(props, this.state);
     }
 }
 
