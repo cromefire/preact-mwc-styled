@@ -13,7 +13,7 @@ export interface IIconButtonState extends RIconButtonState {
 
 export class IconButton extends RIconButton {
     public readonly styles = [
-        {style, id: "button"}
+        {style, id: "icon-button"}
     ];
 
     public componentWillMount() {
